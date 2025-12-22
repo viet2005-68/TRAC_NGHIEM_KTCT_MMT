@@ -1,0 +1,1507 @@
+CHƯƠNG 1: TỔNG QUAN VỀ MẠNG MÁY TÍNH
+
+Câu 1: Trong các phát biểu sau phát biểu nào KHÔNG chính xác?
+A. Chồng giao thức của mạng Internet bắt buộc phải có 5 tầng: 1 tầng ứng dụng (application), 1 tầng giao vận (transport), 1 tầng mạng (network), 1 tầng liên kết dữ liệu (data link), và 1 tầng vật lý (physic)
+B. Mạng Internet bao gồm các mạng con kết nối với nhau, mỗi mạng có thể sử dụng các công nghệ hoàn toàn khác nhau ở tầng vật lý và tầng liên kết dữ liệu
+C. Chồng giao thức của mạng Internet có thể có tới 7 tầng.
+D. Mạng Internet bao gồm các mạng con kết nối với nhau, mỗi mạng có thể sử dụng các thuật toán tìm đường khác nhau.
+• A. a;
+^Chồng giao thức của mạng Internet thực tế là mô hình TCP/IP, thường được mô tả với 4 hoặc 5 tầng. Mô hình OSI (Open Systems Interconnection) mới là mô hình có 7 tầng. Phát biểu A sai vì nó trộn lẫn hai mô hình và khẳng định 5 tầng là "bắt buộc".`
+
+Câu 2: Ghép kiểu gói tin được sử dụng bởi giao thức của các tầng tương ứng?
+a. Tầng liên kết dữ liệu b. Tầng mạng c. Tầng giao vận d. Tầng ứng dụng
+i. Thông báo (messages) ii. Khung tin (frame) iii. Gói tin (packet) iv. Đoạn tin (segment)
+A. a-ii b-iii c-iv d-i
+B. a-i b-ii c-iii d-iv
+C. a-ii b-iv c-iii d-i
+D. a-iv b-iii c-ii d-i
+• A. a;
+^Tên gọi đơn vị dữ liệu ở các tầng: Tầng ứng dụng (Application) là Thông báo (Message), Tầng giao vận (Transport) là Đoạn tin (Segment), Tầng mạng (Network) là Gói tin (Packet), Tầng liên kết dữ liệu (Data Link) là Khung tin (Frame).`
+
+Câu 9: Mô hình OSI có bao nhiêu tầng?
+A. 5
+B. 7
+C. 4
+D. 10
+• B. a;
+^Mô hình OSI (Open Systems Interconnection) có tổng cộng 7 tầng: 1. Tầng vật lý (Physical), 2. Tầng liên kết dữ liệu (Data Link), 3. Tầng mạng (Network), 4. Tầng giao vận (Transport), 5. Tầng phiên (Session), 6. Tầng trình diễn (Presentation), 7. Tầng ứng dụng (Application).`
+
+Câu 14: Trong các tài liệu về mạng máy tính hiện nay, các tác giả hay sử dụng các ví dụ dựa trên mạng Internet để có tính thực tế. Để có tính lý thuyết cao, họ cũng thường sử dụng mô hình … (có 7 tầng) để trình bày.
+A. TCP/IP
+B. OSI
+C. Hybrid
+D. Internet
+• B. a;
+^Mô hình OSI là mô hình tham chiếu có 7 tầng, thường được dùng để trình bày các khái niệm mạng một cách đầy đủ và có tính lý thuyết cao.`
+
+Câu 32: Các phát biểu dưới đây đúng hay sai ?
+A. Mạng Internet nghẽn chủ yếu ở mạng lõi (Core network)
+B. Mạng Internet có thể đảm bảo dữ liệu được truyền đến đích theo thời gian thực
+C. Asynchronous Data Subscriber Line (ADSL) là một công nghệ mạng truy nhập
+D. Đóng gói dữ liệu (encapsulation) nghĩa là bọc gói dữ liệu của tầng dưới vào trong gói dữ liệu của tầng trên
+• A. a;
+^Phát biểu A và C đúng. Mạng lõi là nơi tập trung lưu lượng từ nhiều mạng truy nhập nên dễ xảy ra nghẽn. ADSL là công nghệ truy nhập băng rộng phổ biến. Phát biểu B sai vì Internet là mạng "best-effort", không đảm bảo thời gian thực. Phát biểu D sai, encapsulation là bọc gói dữ liệu của tầng trên vào trong gói của tầng dưới.`
+
+Câu 35: Bảng dưới là 8 byte dữ liệu được thêm các bit chẵn lẻ 2 chiều. Có 1 bit sai nằm ở phần dữ liệu. Tìm bit đó (viết kết quả theo định dạng (hàng,cột)).
+| | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | P |
+|---|---|---|---|---|---|---|---|---|---|
+| 1 | 0 | 0 | 1 | 1 | 0 | 0 | 1 | 0 | 1 |
+| 2 | 1 | 1 | 0 | 0 | 0 | 1 | 1 | 0 | 0 |
+| 3 | 1 | 1 | 0 | 0 | 0 | 1 | 1 | 1 | 0 |
+| 4 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 1 | 1 |
+| 5 | 0 | 0 | 0 | 1 | 0 | 0 | 1 | 1 | 1 |
+| 6 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 1 |
+| 7 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 8 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| P | 0 | 0 | 1 | 1 | 0 | 1 | 0 | 1 | 0 |
+A. (3,2)
+B. (6,7)
+C. (1,9)
+D. (9,8)
+• A. a;
+^Kiểm tra bit chẵn lẻ (even parity) cho từng hàng và cột.
+Hàng 3 có: 1+1+0+0+0+1+1+1 = 5 (lẻ), nhưng bit parity P=0 (sai).
+Cột 2 có: 0+1+1+1+0+1+0+1 = 5 (lẻ), nhưng bit parity P=0 (sai).
+Giao của hàng sai và cột sai là vị trí của bit lỗi, tức là (3,2).`
+
+Câu 43: Mạng ở hình dưới hoạt động theo kiểu chuyển mạch gói (packet switching). Trễ lan truyền là 1 ms/link , gói tin 1000 bit, tốc độ truyền 1000 bps/link. Hỏi trễ truyền 1 gói tin từ S đến R là bao nhiêu ms? S --- N1 --- N2 --- R
+A. 1003
+B. 3000
+C. 3003
+D. 1001
+• C. a;
+^Thời gian truyền 1 gói (transmission delay) trên 1 link: T_trans = 1000 bit / 1000 bps = 1 s = 1000 ms. Trễ lan truyền (propagation delay) là 1 ms. Do sử dụng store-and-forward, tổng trễ = 3 * (T_trans + T_prop) = 3 * (1000 + 1) = 3003 ms.`
+
+Câu 44: Chọn “Đúng” hoặc “Sai” cho các ý dưới đây về khái niệm Lõi mạng (network core) trong mạng Internet.
+A. Vận chuyển gói tin theo cơ chế chuyển mạch gói (packet switch)
+B. Là một mạng lưới các thiết bị switch kết nối với nhau
+C. Bao gồm các client và server
+D. Là một mạng lưới các thiết bị router kết nối với nhau
+• A. a;
+^Lõi mạng Internet là một mạng lưới các router (D đúng) kết nối với nhau, sử dụng cơ chế chuyển mạch gói (A đúng) để chuyển tiếp dữ liệu. Nó không bao gồm client/server (C sai) và không dùng switch làm thiết bị chính (B sai). Câu hỏi yêu cầu chọn 1, A là cơ chế hoạt động, D là thành phần cấu tạo.`
+
+Câu 45: Theo mô hình OSI, router thuộc về tầng nào:
+A. tầng session
+B. tầng physical
+C. tầng data link
+D. tầng network
+• D. a;
+^Router là thiết bị cốt lõi của tầng mạng (Network Layer - Tầng 3 trong mô hình OSI), có chức năng chính là định tuyến các gói tin giữa các mạng khác nhau.`
+
+Câu 57: Nếu người ta dùng 10 bit để biểu diễn một ký tự và tốc độ đường truyền là 1200bps thì bao nhiêu kí tự sẽ được truyền trong một giây?
+A. 12
+B. 120
+C. 1200
+D. 10
+• B. a;
+^Tốc độ đường truyền là 1200 bit mỗi giây (bps). Mỗi ký tự cần 10 bit để biểu diễn. Số ký tự truyền được trong một giây = (Số bit truyền trong 1 giây) / (Số bit cho 1 ký tự) = 1200 / 10 = 120 ký tự.`
+
+Câu 58: Chồng giao thức của mạng Internet có hình gì?
+A. Hình thang
+B. Hình kim tự tháp
+C. Hình đồng hồ cát
+D. Hình chữ nhật
+• C. a;
+^Mô hình chồng giao thức Internet thường được ví như đồng hồ cát. Phần trên rộng là rất nhiều giao thức tầng ứng dụng, phần dưới rộng là rất nhiều công nghệ tầng liên kết và vật lý. Tất cả đều phải đi qua "eo" hẹp ở giữa là giao thức IP ở tầng mạng.`
+
+Câu 60: Mạng ở hình dưới hoạt động theo kiểu chuyển mạch kênh (circuit switching). Trễ lan truyền là 1 ms/link , gói tin 1000 bit, tốc độ truyền 1000 bps/link. Hỏi trễ truyền 1 gói tin từ S đến R là bao nhiêu ms? S --- N1 --- N2 --- R
+A. 1003
+B. 3003
+C. 1000
+D. 3
+• A. a;
+^Với chuyển mạch kênh, dữ liệu truyền như một luồng liên tục. Tổng trễ = Thời gian truyền gói tin + Tổng trễ lan truyền qua các link.
+Thời gian truyền = 1000 bit / 1000 bps = 1000 ms.
+Tổng trễ lan truyền = 3 links * 1 ms/link = 3 ms.
+Tổng cộng = 1000 + 3 = 1003 ms.`
+
+Câu 62: Các câu trả lời dưới đây là “Đúng” hay “Sai” đối với câu hỏi “Giao thức mạng quy định gì ?” (network protocol)
+A. Hành vi sẽ thực hiện khi nhận được bản tin
+B. Format của bản tin (message) gửi và nhận
+C. Port number của ứng dụng
+D. Thứ tự gửi và nhận bản tin
+• A. a;
+^Giao thức mạng định nghĩa format, thứ tự các bản tin được gửi/nhận và các hành động cần thực hiện khi gửi hoặc nhận một bản tin. Port number là một địa chỉ, không phải quy định của giao thức.`
+
+Câu 77: Thời gian truyền dữ liệu (transmission time) của gói tin 2000 byte vào mạng LAN có băng thông 100 Mbps là bao nhiêu?
+A. 0.00008 s
+B. 0.00016 s
+C. 0.00002 s
+D. 0.00001 s
+• B. a;
+^Kích thước gói tin = 2000 bytes * 8 bits/byte = 16000 bits.
+Băng thông = 100 Mbps = 100 * 10^6 bps.
+Thời gian truyền = Kích thước / Băng thông = 16000 / (100 * 10^6) = 0.00016 s.`
+
+Câu 78: Thời gian lan truyền (propagation time) của gói tin giữa hai máy tính cách nhau 400m với vận tốc lan truyền 2x10^8 m/s là bao nhiêu?
+A. 0.00004 s
+B. 0.000016 s
+C. 0.000002 s
+D. 0.00001 s
+• C. a;
+^Thời gian lan truyền = Khoảng cách / Vận tốc = 400 m / (2 * 10^8 m/s) = 2 * 10^-6 s = 0.000002 s.`
+
+Câu 79: Giả sử tốc độ lan truyền 1km/s, tốc độ truyền dữ liệu 2Mbps, khoảng cách 2m, kích cỡ gói tin 50KB, Tiêu đề chiếm 20%. Thông lượng từ A đến B xấp xỉ là bao nhiêu?
+A. 1.7 Mbps
+B. 1.6 Mbps
+C. 1.5 Mbps
+D. 1.4 Mbps
+• B. a;
+^Thông lượng (throughput) là tốc độ truyền dữ liệu hữu ích (payload) thực tế. Ở đây, dữ liệu hữu ích chiếm 100% - 20% = 80% tổng kích cỡ gói tin. Vậy thông lượng xấp xỉ = 2 Mbps * 80% = 1.6 Mbps.`
+
+Câu 94: Tầng phiên (Session) nhận dịch vụ từ tầng … và sử dụng dịch vụ của tầng ……
+A. presentation, transport
+B. application, presentation
+C. presentation, data link
+D. transport, network
+• A. a;
+^Theo mô hình OSI 7 tầng, tầng n nhận dịch vụ từ tầng n+1 và sử dụng dịch vụ của tầng n-1. Tầng Phiên (5) nhận dịch vụ từ tầng Trình diễn (6) và sử dụng dịch vụ của tầng Giao vận (4).`
+
+Câu 112: Mạng Internet so các mạng điện thoại truyền thống có ưu điểm là
+A. Sử dụng băng thông hiệu quả hơn
+B. Chất lượng truyền tin tốt hơn
+C. Độ trễ thấp hơn
+D. Bảo mật tốt hơn
+• A. a;
+^Mạng Internet dùng chuyển mạch gói, cho phép nhiều người dùng chia sẻ băng thông, hiệu quả hơn chuyển mạch kênh của điện thoại (dành riêng kênh, lãng phí khi không nói).`
+
+Câu 115: Chọn ý đúng trong các diễn đạt dưới đây về cơ chế store-and-forward ở router.
+A. Gói tin được forward theo từng byte.
+B. Toàn bộ gói tin phải đến router trước khi nó có thể được forward đi tiếp.
+C. Chỉ cần header của gói tin đến router là có thể forward đi tiếp.
+D. Cứ bit nào vào là có thể forward bit đó ra luôn.
+• B. a;
+^Cơ chế store-and-forward yêu cầu router phải nhận (store) và lưu toàn bộ gói tin vào bộ đệm, sau đó mới xử lý và chuyển tiếp (forward) nó đi.`
+
+Câu 117: Dữ liệu khi truyền từ A đến B cần đi qua 3 đường truyền có băng thông 10Mbps, 20Mbps và 30 Mbps. Tốc độ truyền dữ liệu tối đa giữa A và B là bao nhiêu?
+A. 10Mbps
+B. 30Mbps
+C. 20Mbps
+D. 60Mbps
+• A. a;
+^Tốc độ của một chuỗi kết nối bị giới hạn bởi liên kết có tốc độ thấp nhất (bottleneck link). Ở đây là 10Mbps.`
+
+Câu 119: Các phát biểu dưới đây là đúng hay sai về chức năng chính của mạng lõi (network core)?
+A. Một trong hai chức năng chính là điều khiển đa truy cập (Multiple Access).
+B. Một trong hai chức năng chính là phát hiện lỗi (Error detection).
+C. Một trong hai chức năng chính là định tuyến (Routing).
+D. Một trong hai chức năng chính là chuyển tiếp gói tin (Forwarding).
+• C. a;
+^Hai chức năng chính của mạng lõi (tầng mạng) là Routing (xác định đường đi tổng thể) và Forwarding (chuyển tiếp gói tin tại một router). C và D đều đúng, nhưng câu hỏi yêu cầu chọn 1. Cả hai đều là chức năng chính.`
+
+Câu 127: Core network của mạng Internet sử dụng cơ chế
+A. Circuit switching
+B. Packet switching
+C. Label switching
+D. Datagram switching
+• B. a;
+^Mạng lõi của Internet sử dụng cơ chế chuyển mạch gói (packet switching). Datagram switching là một dạng của packet switching.`
+
+Câu 132: Các tầng tương tác với
+A. Tầng dưới nó
+B. Mọi tầng khác
+C. Tầng trên và tầng dưới
+D. Tầng trên nó
+• C. a;
+^Trong mô hình phân tầng, một tầng (n) cung cấp dịch vụ cho tầng ngay trên nó (n+1) và sử dụng dịch vụ của tầng ngay dưới nó (n-1).`
+
+Câu 147: Trên một mạng chuyển mạch gói, một file 1KBytes được gửi qua 3 links, băng thông mỗi link 1Mbps, gói tin 1000 byte. Thời gian cần thiết để truyền toàn bộ file là bao nhiêu miliseconds? (Bỏ qua các trễ khác)
+A. 8
+B. 16
+C. 24
+D. 32
+• C. a;
+^Thời gian truyền 1 gói 1000 byte (8000 bit) trên link 1Mbps là: T_trans = 8000 / 10^6 = 8ms. File 1KBytes (1024 bytes) được chia thành 2 gói (gói 1: 1000B, gói 2: 24B).
+Tổng thời gian = (số link + số gói - 1) * T_trans = (3 + 2 - 1) * 8ms = 4 * 8ms = 32ms.
+Nếu giả định file 1KB = 1000B (1 gói): T = (3 + 1 - 1) * 8ms = 24ms. Đáp án 24 có lẽ dựa trên giả định này.`
+
+Câu 150: So với mô hình OSI, mô hình TCP/IP có hay không có các tầng nào dưới đây?
+A. Tầng phiên (session layer)
+B. Tầng trình diễn (presentation layer)
+C. Tầng ứng dụng (application layer)
+D. Tầng giao vận (transport layer)
+• A. a;
+^Mô hình TCP/IP gộp chức năng của tầng Phiên, Trình diễn và Ứng dụng của OSI vào một tầng duy nhất là tầng Ứng dụng. Do đó, TCP/IP không có tầng Phiên và Trình diễn riêng biệt.`
+
+Câu 154: Độ trễ lan truyền (Propagation delay) phụ thuộc vào
+A. Khoảng cách vật lý giữa bên gửi và bên nhận
+B. Kích thước gói tin
+C. Băng thông của đường truyền
+D. Kích thước hàng đợi tại router
+• A. a;
+^Độ trễ lan truyền là thời gian để một bit di chuyển từ đầu đến cuối một liên kết vật lý, được tính bằng công thức: Khoảng cách / Tốc độ lan truyền.`
+
+Câu 162: Hãy xem xét việc truyền dữ liệu trên một kênh truyền vật lý. Nguyên nhân mất dữ liệu xảy ra trên kênh chủ yếu là do
+A. Mất dữ liệu do tràn bộ đệm
+B. Lỗi bit tín hiệu
+C. Mất gói tin do vượt quá TTL
+D. Cả A, D và B
+• B. a;
+^Trên một kênh truyền vật lý, nguyên nhân chính gây mất mát là nhiễu điện từ, suy hao tín hiệu... dẫn đến việc các bit bị thay đổi (lỗi bit), làm cho bên nhận không thể giải mã đúng hoặc phát hiện ra lỗi và loại bỏ frame.`
+
+Câu 165: Mạng máy tính là
+A. Tập hợp các máy tính trong một phòng
+B. Nhiều máy tính có kết nối với nhau
+C. Một kiểu máy tính
+D. Một phần mềm
+• B. a;
+^Định nghĩa cơ bản của mạng máy tính là một tập hợp các máy tính và thiết bị được kết nối với nhau để chia sẻ tài nguyên và trao đổi dữ liệu.`
+
+Câu 174: Một gói tin IP sau khi gửi có thể không đến được bên nhận. Tại sao?
+A. Tất cả các đáp án đều đúng
+B. Gói tin bị loại bỏ do tràn bộ đệm ở router
+C. Gói tin bị loại bỏ do đi hết số chặng định tuyến theo quy định (TTL)
+D. Gói tin bị loại bỏ do có lỗi bit
+• A. a;
+^Tất cả các lý do trên đều có thể khiến một gói tin IP bị mất trên đường truyền. IP là giao thức "best-effort" không đảm bảo việc gửi thành công.`
+
+Câu 176: Mạng cục bộ LAN là viết tắt của
+A. Local Area Network
+B. Local Arial Net
+C. Low Area Network
+D. Large Area Network
+• A. a;
+^LAN là viết tắt của Local Area Network, tức là Mạng Cục bộ.`
+
+Câu 177: Mạng Internet là một mạng có cấu trúc như thế nào?
+A. Client - Server
+B. Phân cấp
+C. Peer-to-peer
+D. Phẳng
+• B. a;
+^Internet là một "mạng của các mạng", có cấu trúc phân cấp bao gồm các nhà cung cấp dịch vụ Internet (ISP) ở các cấp khác nhau được kết nối với nhau.`
+
+CHƯƠNG 2: TẦNG ỨNG DỤNG
+Câu 2: Máy chủ Web proxy dùng cho các máy tính của một trường học cần đặt ở đâu để giảm tải cho đường truyền Internet của trường học đó?
+A. Ở vị trí bất kỳ trên mạng Internet
+B. Trong mạng backbone của nhà cung cấp dịch vụ Internet (ISP)
+C. Trong mạng nội bộ của trường học
+D. Gần máy chủ Web mà các máy tính của trường học đó truy cập nhiều nhất
+• C. a;
+^Đặt proxy trong mạng nội bộ giúp các yêu cầu lặp lại được đáp ứng ngay từ cache mà không cần đi ra ngoài Internet, do đó giảm tải cho đường truyền và giảm độ trễ.`
+
+Câu 4: Giao thức nào dùng để gửi email?
+A. SMTP
+B. POP3
+C. IMAP
+D. HTTP
+• A. a;
+^SMTP (Simple Mail Transfer Protocol) là giao thức chuẩn để gửi (push) email. POP3 và IMAP là giao thức để nhận (pull) email.`
+
+Câu 7: Ứng dụng mạng (Network applications) có thể được xây dựng theo các kiến trúc nào sau đây?
+A. Peer-to-peer
+B. Client-Server
+C. Cả B, A và D
+D. Hybrid
+• C. a;
+^Các ứng dụng mạng có thể được xây dựng theo kiến trúc Client-Server, Peer-to-Peer (P2P), hoặc Hybrid (lai giữa cả hai).`
+
+Câu 11: Các phát biểu dưới đây đúng hay sai ?
+A. Mỗi một chu kỳ Request-response của HTTP chỉ có thể chạy trên cùng 1 kết nối TCP
+B. Chỉ cần SMTP là đủ cho các hệ thống email phổ biến hiện nay hoạt động được
+C. Thông tin điều khiển và dữ liệu tải file của FTP được chạy trên cùng một kết nối TCP
+D. HTTP request và HTTP response chạy trên hai kết nối TCP khác nhau
+• A. a;
+^Trong HTTP, một yêu cầu (request) và phản hồi (response) tương ứng của nó diễn ra trên cùng một kết nối TCP. Các lựa chọn khác sai.`
+
+Câu 16: Dịch vụ thư điện tử sử dụng giao thức nào ở tầng ứng dụng?
+A. HTTP
+B. SIP
+C. FTP
+D. SMTP
+• D. a;
+^Dịch vụ thư điện tử (email) sử dụng giao thức SMTP để gửi thư.`
+
+Câu 22: Dịch vụ DNS có thể cân bằng tải cho các Web server được nhân bản của cùng một trang Web bằng cách nào?
+A. Gán nhiều biệt danh (alias name) cho tên miền của trang Web
+B. Lưu tập địa chỉ IP của các Web server trong bản ghi DNS ứng với tên miền của trang Web
+C. DNS server chuyển các thông báo HTTP request đến các Web server một cách ngẫu nhiên
+D. Đăng ký tên miền của trang Web với nhiều authoritative DNS server
+• B. a;
+^DNS có thể thực hiện cân bằng tải bằng cách ánh xạ một tên miền duy nhất tới một danh sách nhiều địa chỉ IP (của các server nhân bản). Khi nhận được truy vấn, DNS server sẽ trả về các địa chỉ IP này theo một thứ tự xoay vòng (round-robin).`
+
+Câu 23: Trong một mạng LAN có cài đặt một router có chức năng DHCP và DNS. Trễ đầu cuối giữa hai máy bất kỳ trong LAN là 30ms. Một máy C thực hiện truy vấn tên miền www.vnexpress.net đã được cache tại DNS nội bộ. Hỏi sau bao nhiêu ms máy C nhận được phản hồi?
+A. 30
+B. 60
+C. 90
+D. 120
+• B. a;
+^Quá trình bao gồm việc gửi gói tin truy vấn và nhận gói tin phản hồi. Tổng thời gian là thời gian đi và về (Round-Trip Time - RTT) = 30 ms (đi) + 30 ms (về) = 60 ms.`
+
+Câu 26: Trong các giao thức sau, giao thức nào chạy ở tầng ứng dụng và không sử dụng TCP để truyền/nhận dữ liệu?
+A. DNS
+B. ARP
+C. IP
+D. HTTP
+• A. a;
+^DNS chủ yếu sử dụng UDP cho các truy vấn thông thường vì tính nhanh gọn. HTTP sử dụng TCP. IP là giao thức tầng mạng. ARP hoạt động ở tầng liên kết dữ liệu.`
+
+Câu 34: Trong bản ghi tài nguyên của DNS, trường TTL (Time to live) được lưu trữ trong 31 bit. Hỏi: Thời gian sống tối đa của bản ghi tài nguyên DNS có thể được thiết lập vào khoảng?
+A. 65 năm
+B. 67 năm
+C. 66 năm
+D. 68 năm
+• D. a;
+^Thời gian sống tối đa = 2^31 giây.
+2^31 / (60 giây/phút * 60 phút/giờ * 24 giờ/ngày * 365 ngày/năm) ≈ 68.09 năm.`
+
+Câu 37: Bob truy nhập vào trang www.vnexpress.net sử dụng HTTP 1.1. Trang chủ vnexpress.net chứa 15 hình ảnh. Số lượng kết nối TCP được thực hiện là?
+A. 2
+B. 15
+C. 16
+D. 1
+• D. a;
+^HTTP 1.1 sử dụng kết nối bền (persistent connection) mặc định, cho phép một kết nối TCP duy nhất được sử dụng để tải trang HTML và tất cả 15 hình ảnh.`
+
+Câu 39: Giả thiết rằng một máy chủ gửi một file F cho máy khác mất 1 giây. Nếu có một server chia sẻ file F đó cho N máy khách theo kiểu client-server, sau 3 giây, có thể có tối đa bao nhiêu máy sẽ có file F (tính cả server)?
+A. 3
+B. 4
+C. 5
+D. 8
+• B. a;
+^Trong kiểu client-server, server gửi file lần lượt cho từng client.
+
+Giây 1: Server gửi cho Client 1. (2 máy có file)
+
+Giây 2: Server gửi cho Client 2. (3 máy có file)
+
+Giây 3: Server gửi cho Client 3. (4 máy có file)
+Vậy tối đa có 4 máy (1 server + 3 client) có file F.`
+
+Câu 49: Giao thức UDP thường được dùng với ứng dụng nào sau đây?
+A. Ứng dụng nói chuyện trực tuyến (voice chat)
+B. Ứng dụng Web
+C. Ứng dụng truyền file
+D. Ứng dụng thư điện tử
+• A. a;
+^Các ứng dụng thời gian thực như voice chat, video streaming, game online thường ưu tiên tốc độ và độ trễ thấp hơn là độ tin cậy, do đó chúng sử dụng UDP.`
+
+Câu 56: Cơ chế phân cấp nào hỗ trợ ánh xạ tên máy tính (hostname) và địa chỉ IP:
+A. RARP
+B. ARP
+C. LDAP
+D. DNS
+• D. a;
+^DNS (Domain Name System) là hệ thống phân cấp toàn cầu có chức năng chính là phân giải tên miền (hostname) thành địa chỉ IP.`
+
+Câu 65: Alice truy nhập vào trang thương mại điện tử alibabe.cn. Điều nào sau đây KHÔNG đúng về khái niệm cookie?
+A. Cookie có độ dài cố định
+B. Cookie là đoạn dữ liệu về người dùng
+C. Cookie được tạo ra bởi máy chủ (cụ thể alibabe.cn)
+D. Cookie cho phép máy chủ theo dõi trạng thái người dùng
+• A. a;
+^Cookie lưu trữ thông tin về phiên làm việc của người dùng. Lượng thông tin này thay đổi tùy theo hoạt động, do đó cookie không có độ dài cố định.`
+
+Câu 71: Khi Bob gửi e-mail cho Alice, máy tính của Alice không kết nối mạng. Khi đó, email của Bob sẽ nằm ở đâu?
+A. Trong mail box của Alice trên mail server của Alice
+B. Trong hàng thư chờ gửi trên mail server của Bob
+C. Trong hàng thư chờ gửi trên mail server của Alice
+D. Trong mail box của Bob trên mail server của Bob
+• A. a;
+^Email từ mail server của Bob sẽ được chuyển đến mail server của Alice và lưu trữ trong hòm thư của Alice tại đó, chờ Alice kết nối và tải về.`
+
+Câu 81: Tiến trình ứng dụng (application process) được đánh địa chỉ bởi
+A. Physical address
+B. Port number
+C. Địa chỉ IP
+D. Process number
+• B. a;
+^Tầng giao vận sử dụng số hiệu cổng (Port number) để phân biệt các tiến trình ứng dụng khác nhau đang chạy trên cùng một máy tính.`
+
+Câu 84: Giao thức để truyền trang web qua Internet là
+A. SSH
+B. DNS
+C. SMTP
+D. HTTP
+• D. a;
+^HTTP (HyperText Transfer Protocol) là giao thức nền tảng để truyền tải các trang web.`
+
+Câu 91: Hãy tìm câu trả lời đúng nhất liên quan đến thư điện tử
+A. SMTP là giao thức nhận thư điện tử
+B. Bản ghi DNS kiểu MX dùng để chỉ tên miền và địa chỉ máy chủ thư điện tử
+C. POP3 và IMAP là các giao thức truyền thư điện tử
+D. Người dùng POP3 có thể xem lại lịch sử các thao tác đã thực hiện
+• B. a;
+^Bản ghi MX (Mail eXchanger) trong DNS được dùng để xác định mail server chịu trách nhiệm nhận email cho một tên miền.`
+
+Câu 97: Một ứng dụng voice chat thời gian thực nên sử dụng giao thức nào dưới đây?
+A. UDP
+B. HTTP
+C. FTP
+D. TCP
+• A. a;
+^Ứng dụng voice chat ưu tiên độ trễ thấp, chấp nhận mất một vài gói tin nhỏ. Do đó, UDP là lựa chọn phù hợp hơn TCP.`
+
+Câu 102: Các phát biểu dưới đây đúng hay sai ?
+A. Ứng dụng mạng chỉ có thể được kiến trúc theo kiểu client/server
+B. Đặc điểm cơ bản của mô hình client/server là dựa trên cơ chế hỏi/đáp (request/response)
+C. Ứng dụng mạng có thể được kiến trúc theo kiểu Peer-to-peer
+D. Ứng dụng mạng có thể được kiến trúc theo kiểu Client/Server
+• B. a;
+^B, C, D đều đúng. Mô hình client/server hoạt động dựa trên cơ chế request/response. Ngoài ra còn có mô hình P2P.`
+
+Câu 107: Liên quan đến giao thức HTTP, hãy đánh dấu đúng sai vào các câu sau:
+A. Header của bản tin HTTP có thể mang dữ liệu dạng nhị phân
+B. Có hai bản tin HTTP là HTTP request và HTTP reply
+C. HTTP có thể có nhiều dòng headers
+D. HTTP methods (ví dụ POST, GET, …) tồn tại trong HTTP reply
+• C. a;
+^A, C, G, H, I đúng. Phần header và payload của HTTP đều có thể mang dữ liệu nhị phân. HTTP có hai loại bản tin là request và response (không phải reply). HTTP methods nằm trong request. Status code nằm trong response. Không phải bản tin nào cũng có payload (ví dụ GET).`
+
+Câu 111: Các phát biểu dưới đây đúng hay sai ?
+A. POP3 và SMTP có chức năng tương đương
+B. POP3 và IMAP có chức năng tương đương
+C. Một hệ thống email có thể hoạt động được dựa vào POP3 và SMTP
+D. Một hệ thống email có thể hoạt động được dựa vào POP3 và IMAP
+• B. a;
+^POP3 và IMAP đều là giao thức nhận mail (pull mail), nên chức năng là tương đương. SMTP là giao thức gửi mail.`
+
+Câu 116: Bộ giao thức truyền dữ liệu qua Internet là?
+A. VoiceIP
+B. DNS
+C. HTTP
+D. TCP/IP
+• D. a;
+^TCP/IP là bộ giao thức nền tảng của mạng Internet, quy định cách dữ liệu được đóng gói, định địa chỉ, truyền, định tuyến và nhận.`
+
+Câu 120: HTTP server nghe ở port nào
+A. 81
+B. 80
+C. 25
+D. 82
+• B. a;
+^Theo quy ước, các máy chủ HTTP lắng nghe các yêu cầu đến trên cổng (port) 80.`
+
+Câu 124: Trong các phát biểu sau về kiến trúc Client-Server, câu nào kém chính xác nhất
+A. Server thường phải có địa chỉ và port cố định
+B. Client có thể gửi bản tin Request đến server
+C. Client có thể không là bên bắt đầu quá trình liên lạc
+D. Client-Server hoạt động chủ yếu dựa trên cơ chế request-reply
+• C. a;
+^Trong kiến trúc client-server, client luôn là bên chủ động bắt đầu quá trình liên lạc bằng cách gửi một yêu cầu (request) đến server.`
+
+Câu 125: Máy chủ DNS A quản lý vn, B quản lý edu.vn, C quản lý vnu.edu.vn, D quản lý uet.vnu.edu.vn. Máy chủ nào là authoritative DNS server đối với tên miền fit.uet.vnu.edu.vn?
+A. Máy chủ DNS D
+B. Máy chủ DNS B
+C. Máy chủ DNS A
+D. Máy chủ DNS C
+• A. a;
+^Máy chủ DNS có thẩm quyền (authoritative) cho một tên miền là máy chủ quản lý trực tiếp tên miền cấp cao hơn ngay sát nó. Ở đây, D quản lý uet.vnu.edu.vn, nên nó cũng là máy chủ có thẩm quyền cho fit.uet.vnu.edu.vn.`
+
+Câu 129: Các phát biểu dưới đây là đúng hay sai
+A. DNS root name server là nơi lưu trữ toàn bộ thông tin về cặp (hostname, địa chỉ IP)
+B. DNS là giao thức ở tầng transport
+C. DNS cung cấp dịch vụ chuyển đổi địa chỉ IP sang MAC
+D. DNS cung cấp dịch vụ chuyển đổi hostname sang địa chỉ IP
+• D. a;
+^Chức năng chính của DNS là chuyển đổi hostname sang địa chỉ IP. Các phát biểu khác sai.`
+
+Câu 133: Trong các phương thức dưới đây, phương thức nào là phương thức của HTTP?
+A. POST
+B. HEAD
+C. GET
+D. PUT
+• A. a;
+^Tất cả A, B, C, D đều là các phương thức của HTTP.`
+
+Câu 136: Hãy tìm câu trả lời đúng nhất liên quan đến DNS:
+A. Dịch vụ DNS trả lại địa chỉ IP dùng riêng (private IP)
+B. DNS chỉ sử dụng giao thức UDP ở tầng giao vận
+C. Một máy chủ DNS có thể quản lý nhiều miền khác nhau
+D. DNS phân giải địa chỉ vật lý thành địa chỉ IP
+• C. a;
+^Một máy chủ DNS có thể được cấu hình để quản lý nhiều vùng (zone) DNS khác nhau, tương ứng với nhiều miền khác nhau.`
+
+Câu 143: Khi Bob gửi mail đến Alice, giao thức SMTP được sử dụng để chuyển mail của Bob đến
+A. Hòm thư (mail box) trên máy chủ của Alice
+B. Hàng đợi thông báo (message queue) trên máy chủ của Bob
+C. Trình đọc mail (User agent) của Alice
+D. Cả hai ý A và B
+• A. a;
+^SMTP chuyển mail từ mail server của người gửi đến mail server của người nhận, nơi mail được lưu trữ trong hòm thư của người nhận.`
+
+Câu 146: Tại sao giao thức HTTP lại sử dụng giao thức TCP mà không sử dụng giao thức UDP?
+A. Giao thức TCP đảm bảo truyền tin tin cậy
+B. Giao thức TCP có cơ chế truyền dữ liệu đơn giản hơn
+C. Giao thức TCP có độ trễ thấp hơn
+D. Giao thức TCP có tốc độ truyền cao hơn
+• A. a;
+^HTTP cần đảm bảo dữ liệu web được truyền đến đầy đủ và đúng thứ tự. TCP cung cấp dịch vụ truyền tin cậy này, trong khi UDP thì không.`
+
+Câu 149: Mail từ máy tính người gửi được gửi trực tiếp đến chương trình đọc thư trên máy tính người đọc.
+A. Đúng
+B. Sai
+C. Tùy trường hợp
+D. Chỉ đúng với giao thức POP3
+• B. a;
+^Quá trình gửi mail luôn có sự tham gia của các mail server làm trung gian.`
+
+Câu 156: Dịch vụ nào chuyển đổi tên miền và hostname sang địa chỉ IP
+A. Internet Relay Chat (IRC)
+B. Network Time Protocol (NTP)
+C. Domain Name System (DNS)
+D. Routing Information Protocol (RIP)
+• C. a;
+^Chức năng chính của DNS (Domain Name System) là phân giải tên miền thành địa chỉ IP.`
+
+Câu 157: Khi Bob gửi mail đến alice@hogehoge.com, để biết được mail server của Alice thì mail server của Bob gửi truy vấn DNS như thế nào?
+A. Gửi truy vấn tên miền hogehoge.com với type=NS
+B. Gửi truy vấn tên miền hogehoge.com với type=MX
+C. Gửi truy vấn tên miền hogehoge.com với type=CNAME
+D. Gửi truy vấn tên miền hogehoge.com với type=A
+• B. a;
+^Để tìm địa chỉ của mail server cho một tên miền, cần truy vấn bản ghi MX (Mail eXchanger).`
+
+Câu 159: Các phát biểu dưới đây là đúng hay sai
+A. DNS cung cấp dịch vụ chuyển đổi hostname sang địa chỉ IP
+B. DNS là giao thức tầng transport
+C. SMTP sử dụng giao thức UDP
+D. FTP sử dụng giao thức UDP
+• A. a;
+^Phát biểu A đúng. Các phát biểu còn lại sai: DNS là giao thức tầng ứng dụng, SMTP và FTP đều sử dụng TCP.`
+
+Câu 169: Số lượng Root Name Server trong hệ thống DNS gần giá trị nào nhất
+A. 100
+B. 2
+C. 13
+D. 1000
+• C. a;
+^Có 13 máy chủ DNS gốc (root server) logic trên toàn thế giới, được đặt tên từ A đến M.`
+
+Câu 170: Hãy tìm câu trả lời đúng nhất liên quan đến HTTP
+A. Nếu nhận được HTTP request có nội dung If-modified-since, máy chủ HTTP sẽ chỉ trả lại nội dung được yêu cầu với mã 200 nếu như nội dung đó được cập nhật lần cuối sau ngày được đưa ra
+B. Máy chủ thường phục vụ HTTP trên cổng 80, 808 và 8080
+C. HTTP quy định hoạt động của các nút bấm trên một trình duyệt Web
+D. HTTP quy định cách hiển thị các hình ảnh trên một trình duyệt Web
+• A. a;
+^Header If-Modified-Since được client sử dụng để thực hiện conditional GET. Server chỉ gửi lại toàn bộ nội dung (mã 200 OK) nếu tài nguyên đã thay đổi sau ngày được chỉ định. Nếu không, server sẽ trả về mã 304 Not Modified.`
+
+Câu 171: Các phát biểu dưới đây là đúng hay sai
+A. FTP sử dụng giao thức UDP
+B. DNS sử dụng giao thức TCP
+C. SMTP sử dụng giao thức UDP
+D. HTTP sử dụng giao thức TCP
+• D. a;
+^HTTP, FTP, SMTP đều sử dụng TCP. DNS có thể sử dụng cả TCP và UDP, nhưng chủ yếu là UDP.`
+
+Câu 172: Với lập trình socket, người lập trình không quan tâm việc Hệ điều hành sử dụng giao thức giao vận TCP hay UDP như thế nào. Đúng hay sai?
+A. Sai
+B. Đúng
+C. Chỉ đúng với TCP
+D. Chỉ đúng với UDP
+• A. a;
+^Người lập trình phải chỉ định rõ ràng loại socket là SOCK_STREAM (cho TCP) hay SOCK_DGRAM (cho UDP) khi tạo socket, vì hai giao thức này cung cấp dịch vụ rất khác nhau.`
+
+Câu 178: Giao thức dùng để gửi email giữa các mail server là
+A. IMAP
+B. SMTP
+C. FTP
+D. POP3
+• B. a;
+^SMTP được sử dụng để truyền email giữa các mail server với nhau.`
+
+CHƯƠNG 3: TẦNG GIAO VẬN
+Câu 3: Trong kiến trúc giao thức TCP/IP, tầng IP cung cấp dịch vụ gì cho tầng giao vận?
+A. Truyền dữ liệu giữa các máy tính với độ trễ không đổi
+B. Đảm bảo các gói tin được truyền đến đúng tiến trình của bên nhận
+C. Định tuyến gói tin đến đúng địa chỉ IP của bên nhận
+D. Đảm bảo truyền tin tin cậy giữa các máy tính có liên kết vật lý trực tiếp
+• C. a;
+^Tầng IP (tầng mạng) cung cấp dịch vụ chuyển phát gói tin từ host nguồn đến host đích, bao gồm việc định tuyến gói tin qua các router dựa trên địa chỉ IP đích.`
+
+Câu 5: UDP được gọi là giao thức không hưởng kết nối (connectionless) vì
+A. Cả B và D
+B. Tất cả gói tin UDP được đối xử một cách độc lập
+C. Tất cả các đáp án đều sai
+D. Nó gửi dữ liệu như là một luồng các gói tin liên quan đến nhau
+• B. a;
+^Trong UDP, mỗi datagram là một đơn vị độc lập, được gửi đi mà không cần thiết lập kết nối trước và không có mối liên hệ nào với các datagram khác.`
+
+Câu 10: Để đảm bảo truyền dữ liệu tin cậy, TCP sử dụng cơ chế truyền lại (retransmission). Cơ chế này được thực hiện khi nào ở bên gửi?
+A. Khi phát hiện lỗi checksum
+B. Khi hết thời gian chờ nhận ACK (timeout)
+C. Khi phát hiện sai thứ tự gói tin
+D. Khi phát hiện trùng gói tin
+• B. a;
+^Bên gửi TCP sẽ truyền lại một segment khi bộ đếm thời gian chờ ACK cho segment đó hết hạn (timeout), hoặc khi nhận được 3 ACK trùng lặp.`
+
+Câu 20: Giao thức TCP là một giao thức
+A. Hướng kết nối (connection oriented)
+B. Sử dụng quy trình bắt tay ba bước để khởi tạo kết nối
+C. Cả 3 đáp án đều đúng
+D. Gom dữ liệu từ các ứng dụng thành một luồng duy nhất
+• C. a;
+^Tất cả các phát biểu A, B, và D (gom dữ liệu từ ứng dụng thành các đoạn tin - segment - rồi tạo thành một luồng byte) đều đúng với TCP.`
+
+Câu 24: Cho đoạn dữ liệu gồm 5 byte. Mỗi byte được biểu diễn dưới dạng mã hexa như bảng dưới. Tính Internet checksum của đoạn dữ liệu đó. Yêu cầu viết kết quả dưới dạng hexa (không điền tiền tố Ox).
+| Byte thứ | 1 | 2 | 3 | 4 | 5 |
+|---|---|---|---|---|---|
+| Giá trị | 12 | 00 | 01 | 00 | A0 |
+A. 4CFF
+B. B300
+C. 4D00
+D. 12A1
+• A. a;
+^Cách tính: Ghép thành các từ 16-bit: 1200, 0100, A000 (thêm 8 bit 0 vào byte cuối). Cộng chúng lại: 1200 + 0100 + A000 = B300. Lấy bù 1 của tổng: NOT(B300) = 4CFF.`
+
+Câu 29: Độ lớn của trường checksum trong gói tin TCP là bao nhiêu bit
+A. 16
+B. 64
+C. 32
+D. 0
+• A. a;
+^Trong phần header của cả TCP và UDP, trường Checksum có độ dài là 16 bit.`
+
+Câu 30: Trong giao thức TCP, bên gửi nhận biết sự tắc nghẽn của mạng bằng cách nào?
+A. Router bị tắc nghẽn sẽ đánh dấu vào gói tin
+B. Bên nhận dựa vào độ trễ của gói tin biên nhận ACK
+C. Khi hết thời gian timeout mà không nhận được gói tin biên nhận ACK hoặc nhận được 3 gói tin ACK trùng lặp
+D. Router bị tắc nghẽn sẽ gửi thông báo cho bên gửi
+• C. a;
+^TCP suy ra có tắc nghẽn khi xảy ra một trong hai sự kiện: hết thời gian chờ (timeout) hoặc nhận được 3 ACK trùng lặp.`
+
+Câu 42: Tầng giao vận (transport layer) gom dữ liệu từ các ứng dụng khác nhau thành một luồng duy nhất trước khi chuyển xuống cho
+A. Tầng ứng dụng (application layer)
+B. Tầng liên kết (data link layer)
+C. Tầng vật lý
+D. Tầng mạng (network layer)
+• D. a;
+^Tầng giao vận nhận dữ liệu từ các ứng dụng, đóng gói thành các segment/datagram và chuyển xuống cho tầng mạng để định tuyến.`
+
+Câu 51: Trong giao thức Go-Back-N có độ lớn cửa sổ là 6, A cần gửi các gói có số thứ tự từ 0 đến 6 tới B. Gói 3 trên đường đến B bị lỗi nên không đến được, phải gửi lại 1 lần. Tính số gói (kể cả ACK từ B) mà A và B đã gửi cho nhau sau khi quá trình gửi kết thúc.
+A. 17
+B. 21
+C. 11
+D. 25
+• B. a;
+^A gửi 0, 1, 2, 3, 4, 5, 6 (7 gói). B nhận 0,1,2, gửi ACK 0,1,2 (3 gói). Gói 3 lỗi. B nhận 4,5,6, gửi ACK 2,2,2 (3 gói). A timeout gói 3, gửi lại 3,4,5,6 (4 gói). B nhận 3,4,5,6, gửi ACK 3,4,5,6 (4 gói). Tổng = 7+3+3+4+4 = 21 gói.`
+
+Câu 52: Được biết ngưỡng (threshold) hiện tại của quá trình kiểm soát tắc nghẽn là 16, hãy xác định giá trị của cửa sổ chống tắc nghẽn (congwin) khi bên gửi đã gửi tổng số 35 segment và nhận đầy đủ số ACK trả về mà không có bất kỳ lỗi nào.
+A. 17
+B. 18
+C. 16
+D. 19
+• A. a;
+^Slow Start: cwnd = 1, 2, 4, 8, 16. Tổng số gói đã gửi = 1+2+4+8+16 = 31.
+Sau đó chuyển sang Congestion Avoidance.
+cwnd = 17. Các gói từ 32 đến 35 được gửi khi cwnd=17. Vậy giá trị cwnd là 17.`
+
+Câu 66: Tầng giao vận xử lý vấn đề
+A. Tất cả lựa chọn đều sai
+B. Trao đổi thông tin giữa các node
+C. Trao đổi thông tin giữa các tiến trình (process)
+D. Trao đổi thông tin giữa các ứng dụng
+• C. a;
+^Tầng giao vận cung cấp kênh giao tiếp logic giữa các tiến trình (process) chạy trên các host khác nhau.`
+
+Câu 72: Loại địa chỉ nào trên máy tính đầu cuối mà ứng dụng sử dụng để có thể nhận được dữ liệu từ nơi khác chuyển tới
+A. IP address
+B. MAC address
+C. NIC address
+D. Port address
+• D. a;
+^Ứng dụng sử dụng địa chỉ Port (Port address) để nhận dữ liệu. Địa chỉ IP xác định máy tính, địa chỉ Port xác định ứng dụng cụ thể trên máy tính đó.`
+
+Câu 75: Máy tính A gửi cho máy tính B gói tin TCP thứ nhất có số thứ tự 2000 và độ dài 1000 byte, và gói thứ hai có số thứ tự 3000 và độ dài 200 byte. Máy B chỉ nhận được gói thứ hai. Hỏi sau khi nhận gói thứ hai, B gửi ACK cho A với ACK bằng bao nhiêu?
+A. 3000
+B. 3200
+C. 2000
+D. 1000
+• C. a;
+^Bên nhận B đang chờ byte bắt đầu từ 2000. Khi nhận được gói 2 (seq=3000), nó phát hiện gói 1 bị thiếu và sẽ gửi lại ACK cho byte đang chờ, tức là ACK=2000.`
+
+Câu 81: Tiến trình ứng dụng (application process) được đánh địa chỉ bởi
+A. Physical address
+B. Port number
+C. Địa chỉ IP
+D. Process number
+• B. a;
+^Tầng giao vận sử dụng Port number để xác định một tiến trình ứng dụng cụ thể trên một host.`
+
+Câu 85: Khi sử dụng giao thức TCP, điều gì xảy ra nếu giá trị timeout được thiết lập quá nhỏ?
+A. Bên gửi sẽ nhận được gói tin ACK sớm hơn
+B. Bên nhận sẽ nhận được nhiều gói tin TCP trùng lặp
+C. Bên gửi sẽ phản ứng chậm với việc mất mát gói tin
+D. Buffer của bên nhận sẽ mau đây hơn
+• B. a;
+^Nếu timeout quá nhỏ, bên gửi sẽ cho rằng gói tin đã mất và truyền lại, trong khi gói ACK cho nó có thể vẫn đang trên đường về. Điều này gây ra việc truyền lại không cần thiết và bên nhận sẽ nhận được nhiều gói trùng lặp.`
+
+Câu 95: (đúng sai) Các phát biểu dưới đây đúng hay sai ?
+A. TCP sẽ tăng cửa sổ tắc nghẽn cũng lên 1 sau mỗi RTT khi ở giai đoạn congestion avoidance
+B. Ở giai đoạn slowstart, cửa sổ tắc nghẽn (congestion window - cwnd) tăng lên gấp đôi mỗi khi nhận được 1 ACK
+C. Cả TCP và UDP đều có trường checksum trong phần tiêu đề
+D. TCP header có thể có nhiều hơn 20 bytes
+• A. a;
+^A, C, D đúng. B sai vì cwnd tăng 1 MSS cho mỗi ACK, dẫn đến tăng gấp đôi sau mỗi RTT.`
+
+Câu 96: Hãy xem xét một tình huống trong đó máy A đang truyền dữ liệu cho máy B.
+
+Segment đầu tiên A gửi cho B có Sequence Number bằng 10
+
+A gửi cho B tổng cộng 3 segments có kích thước tương ứng là: Segment-1: 100 bytes, segment-2: 75 bytes, và segment-3: 90 bytes
+
+Việc gửi và nhận 3 gói là diễn ra theo thứ tự và không có lỗi
+Hỏi: Sequence Number của segment-1, segment-2, segment-3 tương ứng là bao nhiêu?
+A. 10,110,185
+B. 10,100,175
+C. 10,110,200
+D. 10,15,20
+• A. a;
+^Seg-1: seq=10.
+Seg-2: seq = 10 (seq seg-1) + 100 (len seg-1) = 110.
+Seg-3: seq = 110 (seq seg-2) + 75 (len seg-2) = 185.`
+
+Câu 99: Trong một gói tin TCP (TCP segment), giá trị ACK number và Sequence Number là các số đếm, phản ánh:
+A. Không phải D, B, C
+B. Số thứ tự gói tin (tính theo segment) đang chờ nhận, và số thứ tự gói tin (segment) đang được truyền
+C. Giá trị cửa sổ nhận và giá trị cửa sổ truyền.
+D. Số thứ tự (tính theo byte) đang chờ nhận, và số thứ tự tính theo byte, của byte đầu tiên của gói tin đang được truyền
+• D. a;
+^Cả Sequence Number và Acknowledgment Number trong TCP đều đếm theo byte. Sequence Number là số thứ tự của byte dữ liệu đầu tiên. Acknowledgment Number là số thứ tự của byte tiếp theo mà bên nhận đang mong đợi.`
+
+Câu 104: A gửi cho B 3 gói TCP có cùng độ dài 200 byte nhưng B chỉ nhận được gói 1 và 3. Biết gói 1 có seq=1000. Hỏi gói ACK B gửi trả A sau khi nhận gói 3 có số ACK là bao nhiêu?
+A. 1200
+B. 1600
+C. 1400
+D. 1000
+• A. a;
+^Sau khi nhận gói 1 (seq=1000, len=200), B mong đợi byte 1200 và gửi ACK=1200. Khi nhận gói 3 (seq=1400), B phát hiện gói 2 bị thiếu nên vẫn gửi lại ACK=1200.`
+
+Câu 105: Trường địa chỉ port trong gói tin TCP có độ dài
+A. 16 bit
+B. 32 bit
+C. 8 bit
+D. 64 bit
+• A. a;
+^Cả Source Port và Destination Port trong TCP header đều có độ dài 16 bit.`
+
+Câu 126: Máy tính A và B truyền dữ liệu qua giao thức TCP. Khi máy tính A nhận định có tắc nghẽn xảy ra trong mạng, máy tính A sẽ
+A. Giảm tốc độ truyền dữ liệu bằng cách giảm kích thước cửa sổ gửi
+B. Dừng gửi dữ liệu cho đến khi router báo hết tắc nghẽn
+C. Dừng gửi dữ liệu cho đến khi máy tính B gửi gói tin ACK báo hết tắc nghẽn
+D. Tăng tốc độ truyền dữ liệu để bù lại lượng dữ liệu mất mát do tắc nghẽn
+• A. a;
+^Khi phát hiện tắc nghẽn, TCP sẽ giảm kích thước cửa sổ gửi (cwnd) để giảm tốc độ đưa dữ liệu vào mạng.`
+
+Câu 130: ACK được sử dụng để làm gì trong giao thức truyền dữ liệu đáng tin cậy (reliable data transfer protocol) ở tầng transport
+A. Là cơ chế giúp sửa lỗi bit gói tin khi nhận
+B. Là cơ chế giúp khôi phục gói tin bị mất
+C. Cả 3 đáp án đều sai
+D. Là cơ chế thông báo tình trạng nhận gói tin
+• D. a;
+^ACK (Acknowledgement) là gói tin xác nhận mà bên nhận gửi cho bên gửi để thông báo rằng nó đã nhận thành công dữ liệu.`
+
+Câu 141: Tầng giao vận (Transport layer) cung cấp một kết nối giữa các
+A. Process
+B. Host
+C. End system
+D. Router
+• A. a;
+^Tầng giao vận chịu trách nhiệm cho việc giao tiếp từ tiến trình này đến tiến trình khác, sử dụng địa chỉ port.`
+
+Câu 148: Đặc điểm của UDP là
+A. Quảng bá
+B. Không hướng nối
+C. Hướng nối
+D. Tin cậy
+• B. a;
+^UDP là một giao thức không hướng nối (connectionless), đơn giản và không đảm bảo tin cậy.`
+
+Câu 151: Tham số cửa sổ tắc nghẽn (cwnd) trong giao thức TCP là một đại lượng nguyên, đo bằng đơn vị
+A. Số lượng TCP segments
+B. Số lượng Byte dữ liệu
+C. Số lượng MSS (number of MSS - Maximum Segment Size)
+D. Không có đơn vị
+• C. a;
+^Giá trị của cwnd quy định số lượng segment có kích thước tối đa (MSS) mà TCP có thể gửi đi trước khi nhận được ACK.`
+
+Câu 160: Gói SYNACK được gửi khi muốn thiết lập kết nối TCP
+A. Đúng
+B. Sai
+C. Tùy trường hợp
+D. Chỉ đúng khi client khởi tạo
+• B. a;
+^Gói tin được gửi để bắt đầu thiết lập kết nối là gói SYN. Gói SYNACK là gói tin phản hồi từ server để chấp nhận kết nối.`
+
+Câu 164: Tại sao phải dùng số thứ tự trong giao thức truyền dữ liệu tin cậy ở tầng transport
+A. Để thống kê được số gói tin đã gửi đi
+B. Để thống kê được số gói tin đã nhận được
+C. Để tránh dữ liệu bị trùng lặp ở phía nhận do gửi lại nhiều lần
+D. Để tránh việc một gói tin được gửi lại nhiều lần
+• C. a;
+^Số thứ tự giúp bên nhận phát hiện gói tin trùng lặp, sắp xếp lại các gói tin bị sai thứ tự, và thông báo cho bên gửi biết gói tin nào đã được nhận.`
+
+Câu 166: A gửi B gói TCP 1 (size=200, seq=120) và gói TCP 2 (size=200). Gói 2 đến trước và được buffer, gói 1 đến sau. Sau khi nhận gói 1, B sẽ trả về ACK có số ACK là bao nhiêu?
+A. 320
+B. 122
+C. 520
+D. 420
+• C. a;
+^Ban đầu, B chờ byte 120. B nhận gói 2 (seq=320) và buffer nó, gửi ACK=120. Sau đó, B nhận gói 1 (seq=120). Vì B đã có sẵn gói 2 trong buffer, nó có thể ghép dữ liệu liền mạch đến byte 519. Do đó, B sẽ gửi ACK cho byte tiếp theo nó mong đợi, là 520.`
+
+Câu 167: Giao thức TCP quy định gói tin sai số thứ tự phải bị xóa bỏ
+A. Sai
+B. Đúng
+C. Tùy phiên bản giao thức TCP
+D. Tùy vào cấu hình của router
+• C. a;
+^Các phiên bản TCP hiện đại (như TCP Reno, SACK) thường sẽ lưu các gói tin sai thứ tự vào bộ đệm thay vì xóa bỏ, để tăng hiệu quả truyền lại.`
+
+Câu 181: (đúng sai) Những phát biểu dưới đây đúng hay sai
+A. Giao thức TCP có tính chất công bằng (fairness) là nhờ chiến lược điều khiển tắc nghẽn theo kiểu AIMD (Additive Increase Multiplicative Decrease)
+B. Gỉa sử một mạng có dung lượng là 64 Kbps, thông lượng của kết nối TCP đó ngay lập tức bằng 64Kbps
+C. Giao thức TCP phát hiện ra gói bị mất nhờ vào trường checksum
+D. Kích thước phần tiêu đề (header) của TCP là lớn hơn kích thước tiêu đề của UDP
+• A. a;
+^A và D đúng. Cơ chế AIMD giúp các kết nối TCP chia sẻ băng thông công bằng. Header TCP (min 20B) lớn hơn UDP (8B). B sai vì TCP có giai đoạn slow start. C sai vì checksum dùng để phát hiện lỗi bit, không phải mất gói.`
+
+CHƯƠG 4: TẦNG MẠNG
+Câu 6: Dưới đây là bảng NAT translation table của một thiết bị NAT tại thời điểm hiện tại. Trong hai cột của bảng này, một cột là “Internet side” một cột là “Local side”. Nhìn vào nội dung của bảng, hãy ĐOÁN xem cột nào là Internet side, cột nào là Local side.
+| 136.4.6.7 : 210 | 192.168.10.44 : 4032 |
+|---|---|
+| 136.4.6.6 : 801 | 192.168.6.4 : 1005 |
+| 1.2.3.4 : 986 | 192.168.5.4 : 1108 |
+
+Internet side A. Cột 2 B. Cột 1
+
+Local side A. Cột 2 B. Cột 1
+• B. a;
+^Dải địa chỉ IP 192.168.x.x là địa chỉ IP riêng dùng trong mạng nội bộ (Local side). Do đó cột 2 là Local side. Cột 1 chứa các địa chỉ IP công cộng trên Internet (Internet side).`
+
+Câu 13: Địa chỉ IP 127.0.0.1 là:
+A. địa chỉ quảng bá lớp A
+B. địa chỉ broadcast
+C. địa chỉ multicast
+D. địa chỉ loopback
+• D. a;
+^Địa chỉ 127.0.0.1 là địa chỉ loopback, được sử dụng để một máy tính gửi gói tin cho chính nó, thường dùng để kiểm tra hoạt động của TCP/IP.`
+
+Câu 15: Giao thức nào được sử dụng để cấu hình địa chỉ IP cho client (IP address, netmask, default gateway, DNS server)?
+A. SNMP
+B. ARP
+C. SMTP
+D. DHCP
+• D. a;
+^DHCP (Dynamic Host Configuration Protocol) là giao thức cho phép một server tự động cấp phát các thông số cấu hình mạng cho các client.`
+
+Câu 17: Chọn “Đúng” hoặc “Sai” cho các ý sau về chức năng của router
+A. Ngăn xung đột
+B. Lựa chọn tuyến đường
+C. Chuyển tiếp các gói tin
+D. Lọc bỏ các gói tin
+• B. a;
+^Chức năng chính của router là lựa chọn tuyến đường (B đúng) và chuyển tiếp gói tin (C đúng). Nó không ngăn xung đột (việc của switch) và không lọc gói tin như một firewall.`
+
+Câu 19: Trong biểu diễn nhị phân, đâu là phạm vi của lớp địa chỉ (class) B
+A. 111…
+B. 110…
+C. 10…
+D. 0…
+• C. a;
+^Theo phân lớp địa chỉ IP, lớp B được xác định bởi hai bit đầu tiên là 10.`
+
+Câu 28: NAT giữa một mạng local và mạng Internet làm việc như thế nào
+A. Dịch địa chỉ IP sang địa chỉ MAC
+B. Dich Hostname sang IP
+C. Dịch địa chỉ IP công cộng (public IP) sang địa chỉ IP riêng (private IP) và ngược lại
+D. Không đáp án nào đúng
+• C. a;
+^NAT dịch địa chỉ nguồn/đích của các gói tin khi chúng đi qua ranh giới giữa mạng riêng và mạng công cộng.`
+
+Câu 31: Bộ định tuyến CIDR nhận được gói tin với địa chỉ đích là 131.23.151.76. Bảng định tuyến của nó có các mục sau: 131.16.0.0/12 -> 3; 131.28.0.0/14 -> 5; 131.19.0.0/16 -> 2; 131.22.0.0/15 -> 1. Đinh danh của giao diện mà gói tin sẽ được chuyển tiếp là ?
+A. 2
+B. 5
+C. 1
+D. 3
+• C. a;
+^Router sử dụng nguyên tắc "longest prefix match". Tiền tố 131.22.0.0/15 là tiền tố dài nhất trong bảng khớp với địa chỉ đích 131.23.151.76. Do đó, gói tin được chuyển qua giao diện 1.`
+
+Câu 33: DHCP cung cấp gì cho client
+A. Không đáp án nào đúng
+B. Địa chỉ IP
+C. Địa chỉ MAC
+D. URL
+• B. a;
+^DHCP cung cấp địa chỉ IP và nhiều thông số cấu hình mạng khác như subnet mask, default gateway, DNS server.`
+
+Câu 36: Tham số nào sau đây quyết định khả năng định tuyến (số gói tin định tuyến/1s) của một router?
+A. Độ lớn của bộ nhớ ở cổng vào (input port)
+B. Tốc độ xử lý của switching fabric
+C. Độ lớn của bộ nhớ ở cổng ra (output port)
+D. Số lượng công vào (input port) và cổng ra (output port)
+• B. a;
+^Switching fabric là bộ phận cốt lõi của router, chịu trách nhiệm chuyển các gói tin từ cổng vào sang cổng ra. Tốc độ của nó quyết định trực tiếp đến hiệu suất chuyển tiếp của router.`
+
+Câu 40: Trong quá trình truyền tin từ máy A sang máy B, gói tin lần lượt đi qua 3 môi trường có MTU khác nhau lần lượt là 4980, 1500, 2500 bytes. Hãy cho biết khi gửi 7500 byte dữ liệu từ A đến B thì bên B nhận được bao nhiêu gói tin trước khi ghép mảnh?
+A. 3
+B. 6
+C. 11
+D. 27
+• B. a;
+^Gói 7500 byte dữ liệu (thêm 20B header = 7520B).
+
+Qua MTU 4980: Tách thành (4960+20) và (2540+20).
+
+Hai mảnh này đến link có MTU 1500.
+
+Mảnh 4960B data: Tách thành 3 gói 1480B data và 1 gói 520B data (tổng 4 gói).
+
+Mảnh 2540B data: Tách thành 1 gói 1480B data và 1 gói 1060B data (tổng 2 gói).
+Tổng số mảnh đến B là 4 + 2 = 6 gói.`
+
+Câu 46: Địa chỉ IP của máy tính A là 110.2.112.12/20, địa chỉ IP của máy tính X là 110.2.109.4/20 và địa chỉ IP của máy tính Y là 110.2.105.20/20. Những máy tính nào có cùng địa chỉ mạng (subnet)?
+A. Máy tính X và máy tính Y
+B. Cả 3 máy tính
+C. Máy tính A và máy tính Y
+D. Máy tính X và máy tính A
+• A. a;
+^Với /20, 20 bit đầu phải giống nhau. 110.2. (0110 1001).4 (X) và 110.2.(0110 1001).20 (Y) có cùng 20 bit đầu. 110.2.(0111 0000).12 (A) khác.`
+
+Câu 47: Khi một gói tin rời khỏi mạng, Router NAT thay thế địa chỉ nguồn của gói tin đó bằng
+A. Địa chỉ IP đích
+B. Địa chỉ IP của NAT router
+C. Địa chỉ port đích
+D. Không đáp án nào đúng
+• B. a;
+^Router NAT thay thế địa chỉ IP nguồn (private IP) và port nguồn bằng địa chỉ IP công cộng của chính nó và một port mới.`
+
+Câu 50: Điều nào sau đây đúng với giao thức định tuyến theo thuật toán distance vector ?
+A. Các bộ định tuyến không trao đổi thông tin với nhau
+B. Các bộ định tuyến trao đổi distance vector với các nút lân cận (neighbour node)
+C. Các bộ định tuyến trao đổi bảng định tuyến với nhau
+D. Các bộ định tuyến sử dụng bảng định tuyến tính
+• B. a;
+^Trong thuật toán distance vector, mỗi router định kỳ trao đổi vector khoảng cách (danh sách các khoảng cách đến các mạng đích) của nó với các router hàng xóm trực tiếp.`
+
+Câu 55: Máy tính của Ngân có IP là 17.84.129.73/19, hãy viết địa chỉ Broadcast của mạng IP mà máy tính của Ngân đang tham gia dưới dạng a.b.c.d/x.y.z.t
+A. 17.84.159.255/255.255.224.0
+B. 17.84.129.255/255.255.255.0
+C. 17.84.255.255/255.255.0.0
+D. 17.84.191.255/255.255.192.0
+• A. a;
+^/19 có nghĩa là 19 bit đầu là phần mạng, 13 bit cuối là phần host. Để tìm địa chỉ broadcast, ta giữ nguyên 19 bit đầu và đặt tất cả 13 bit cuối thành 1.
+17.84.10000001.01001001 -> 17.84.10011111.11111111 -> 17.84.159.255.`
+
+Câu 59: Router A chỉ có 2 node hàng xóm là router B và router C, với chi phí của kết nối từ A đến B và C lần lượt là 2 và 5, B gửi cho A bảng distance vector của mình, trong đó khoảng cách ngắn nhất đến node X từ B được thiết lập là 5. C gửi cho A bảng distance vector của mình, trong đó khoảng cách ngắn nhất đến node X từ C được thiết lập là 3. Hỏi router A sẽ ước lượng khoảng cách ngắn nhất từ A đến X bằng bao nhiêu?
+A. 8
+B. 5
+C. 7
+D. 2
+• C. a;
+^Theo phương trình Bellman-Ford: D_A(X) = min{c(A,B)+D_B(X), c(A,C)+D_C(X)} = min{2+5, 5+3} = min{7, 8} = 7.`
+
+Câu 63: Trong thuật toán định tuyến distance vector, mỗi node trao đổi distance vector của nó với
+A. Các node hàng xóm và các node lân cận node hàng xóm
+B. Không trao đổi với ai
+C. Các node hàng xóm
+D. Toàn bộ node trên mạng
+• C. a;
+^Mỗi router chỉ trao đổi thông tin định tuyến với các router được kết nối trực tiếp với nó (hàng xóm).`
+
+Câu 64: Giao thức DHCP cung cấp cho client
+A. Địa chỉ IP khi client kết nối vào mạng
+B. Tất cả đáp án đều đúng
+C. Tên và địa chỉ IP của DNS Server
+D. Địa chỉ IP của router đầu tiên trong mạng (first hop router)
+• B. a;
+^DHCP có thể cung cấp tất cả các thông số trên cho client.`
+
+Câu 69: Một con số 32 bit, được sử dụng cùng địa chỉ IP của thiết bị để xác định địa chỉ mạng (subnet) của thiết bị là.
+A. ARP address
+B. MAC address
+C. DNS mask
+D. subnet mask
+• D. a;
+^Subnet mask là một số 32-bit được sử dụng để chia một địa chỉ IP thành phần mạng và phần host.`
+
+Câu 73: Câu nói nào là đúng?
+A. Subnet mask chỉ được sử dụng ở lớp địa chỉ (class) A và B
+B. Các máy tính đầu cuối luôn có subnet mask
+C. Subnet mask được gán cho các thiết bị ở lớp địa chỉ (class) A
+D. Các thiết bị được gán cho một subnet mask chỉ khi chúng thuộc về cùng một mạng con
+• B. a;
+^Mọi thiết bị có địa chỉ IP trên mạng TCP/IP đều phải có một subnet mask tương ứng để xác định mạng mà nó thuộc về.`
+
+Câu 80: Router là thiết bị ở tầng
+A. Ứng dụng
+B. Liên kết dữ liệu
+C. Giao vận
+D. Mạng
+• D. a;
+^Router là thiết bị cốt lõi của tầng mạng (Network Layer - Tầng 3).`
+
+Câu 83: Giao thức nào dưới đây là giao thức định tuyến kiểu trạng thái liên kết (link-state routing)?
+A. BGP
+B. RIP
+C. ICMP
+D. OSPF
+• D. a;
+^OSPF (Open Shortest Path First) là giao thức định tuyến link-state. RIP và BGP là giao thức distance-vector.`
+
+Câu 93: Giao thức tự động gán địa chỉ IP cho máy tính
+A. FTP
+B. DHCP
+C. WINS
+D. NAT
+• B. a;
+^DHCP (Dynamic Host Configuration Protocol) là giao thức được thiết kế để tự động hóa việc cấp phát địa chỉ IP.`
+
+Câu 98: 1 gói tin IP có độ dài 2000 byte, độ dài tiêu đề là 20 byte. Gói tin này được truyền qua một liên kết vật lý có MTU là 500 byte và bị phân mảnh. Hỏi giá trị của trường offset của mảnh thứ 2 là bao nhiêu?
+A. 125
+B. 60
+C. 100
+D. 40
+• B. a;
+^Mảnh 1 chứa 480 byte dữ liệu (500 MTU - 20 header). Offset của mảnh 2 = (lượng dữ liệu của mảnh 1) / 8 = 480 / 8 = 60.`
+
+Câu 101: Hãy tìm câu trả lời không chính xác liên quan đến DHCP
+A. DHCP có thể trả lại địa chỉ của Default gateway (địa chỉ router đầu tiên)
+B. DHCP hoạt động ở tầng ứng dụng trong mô hình Internet
+C. Địa chỉ đích của gói tin DHCP Reply là 255.255.255.255
+D. DHCP có thể sử dụng để truyền tin quảng bá
+• C. a;
+^Gói tin DHCP Reply (thực ra là DHCP Offer và DHCP ACK) được gửi dưới dạng broadcast (255.255.255.255). Phát biểu C có thể không chính xác vì không có gói tin tên là "DHCP Reply", nhưng hành vi broadcast là đúng. Tuy nhiên, DHCP Request cũng là broadcast, không phải unicast.`
+
+Câu 110: Bảng định tuyến của router A có các dòng được liệt kê như bên dưới, hãy cho biết nếu một gói tin có địa chỉ đích là 203.113.119.1 thì dòng nào sẽ được chọn để định tuyến cho gói tin đó
+A. Destination 203.113.0.0/16 → Gateway 193.168.10.1
+B. Destination 203.113.128.0/17 → Gateway 14.8.10.1
+C. Destination 203.113.64.0/18 - Gateway 113.57.10.1
+D. Destination 203.113.192.0/18 Gateway 200.176.10.1
+• C. a;
+^Áp dụng nguyên tắc "longest prefix match". Tiền tố 203.113.64.0/18 là tiền tố dài nhất trong bảng khớp với địa chỉ đích 203.113.119.1.`
+
+Câu 113: Lợi ích của việc mạng nội bộ dùng NAT là
+A. Chỉ cần sử dụng một địa chỉ IP cho tất cả các thiết bị trong mạng
+B. Có thể thay đổi ISP một cách dễ dàng mà không cần thay đổi địa chỉ IP của các thiết bị trong mạng
+C. Các thiết bị trong mạng có thể gửi trực tiếp data cho nhau mà không cần địa chỉ IP
+D. Cả A và B đều đúng
+• D. a;
+^NAT cho phép nhiều thiết bị dùng chung 1 IP công cộng và giúp việc thay đổi ISP trở nên dễ dàng hơn vì không cần cấu hình lại IP cho các máy nội bộ.`
+
+Câu 118: Cho sơ đồ mạng sau: R1->subnet A->R2->subnet B->H. Gói tin P có kích cỡ 2000 bytes (gồm tiêu đề và dữ liệu) được gửi từ R1 đến H. MTU của subnet A và B lần lượt là 1500 và 532 bytes. Kích cỡ tiêu đề IP là 20bytes. Khi P đi qua subnet A, P được chia thành 2 mảnh với bit M (fragflag) và offset lần lượt như sau:
+A. M=1, offset=0; M=0, offset=185
+B. M=1, offset=0; M=0, offset=1481
+C. M=0, offset=0; M=1, offset=1480
+D. M=1, offset=0; M=0, offset=1480
+• A. a;
+^Mảnh 1: size=1500, data=1480. M=1 (còn mảnh sau), offset=0.
+Mảnh 2: data còn lại = (2000-20)-1480 = 500. size=520. M=0 (mảnh cuối). offset = 1480/8 = 185.`
+
+Câu 121: Hiện tượng mất dữ liệu (loss) xảy ra trên mạng truyền dữ liệu (data networks) chủ yếu do nguyên nhân nào?
+A. Mất gói tin do vượt quá giá trị TTL (Time To Live)
+B. Cả D, C, A
+C. Mất gói tin do tràn bộ đệm
+D. Mất gói tin do lỗi bit trên đường truyền
+• C. a;
+^Trong các mạng chuyển mạch gói hiện đại, nguyên nhân chính gây mất gói tin là do bộ đệm (buffer) tại các router bị đầy khi có tắc nghẽn, khiến các gói tin đến sau bị loại bỏ (dropped).`
+
+Câu 131: Địa chỉ IPv4 có bao nhiêu bit
+A. 8
+B. 32
+C. 128
+D. 64
+• B. a;
+^Địa chỉ IPv4 có độ dài 32 bit.`
+
+Câu 135: OSPF là giao thức nào dưới đây?
+A. Giao thức định tuyến trong mạng chuyển mạch ảo (Virtual circuit routing)
+B. Giao thức định tuyến trong mạng LAN
+C. Giao thức định tuyến trong miền tự trị (intra AS)
+D. Giao thức định tuyến giữa các miền tự trị (inter AS)
+• C. a;
+^OSPF là một giao thức định tuyến nội miền (Intra-AS hoặc Interior Gateway Protocol - IGP).`
+
+Câu 137: Một router nhận một gói tin IP có độ dài phần dữ liệu là 1000 byte và định tuyến gói tin này qua một liên kết mạng có MTU là 500 byte. Gói tin IP không có trường option. Trường length của gói bé nhất có giá trị bao nhiêu ?
+A. 80
+B. 60
+C. 40
+D. 20
+• B. a;
+^Dữ liệu 1000 byte. Header 20 byte.
+
+Mảnh 1: data 480B, size 500B.
+
+Mảnh 2: data 480B, size 500B.
+
+Mảnh 3: data còn lại 40B, size 60B.
+Gói bé nhất có trường length là 60.`
+
+Câu 138: Cơ cấu chuyển mạch (switching fabric) nào sau đây có tốc độ xử lý gói tin nhanh nhất ? Biết tốc độ xử lý của các đường bus là như nhau.
+A. Kiểu cross-bar
+B. Kiểu memory
+C. Kiểu store-and-forward
+D. Kiểu bus
+• A. a;
+^Về tốc độ, memory < bus < crossbar. Crossbar cho phép nhiều gói tin được chuyển mạch song song, mang lại hiệu suất cao nhất.`
+
+Câu 140: Một máy tính có địa chỉ IP là 192.168.1.2 và Subnet mask là 255.255.255.0. Mạng này có thể có tối đa bao nhiêu máy tính có địa chỉ IP riêng (chú ý phần host không thể gồm toàn 0 hoặc toàn 1)
+A. 254
+B. 255
+C. 8
+D. 256
+• A. a;
+^Subnet mask 255.255.255.0 có 8 bit dành cho phần host. Số địa chỉ tối đa = 2^8 - 2 = 256 - 2 = 254 (trừ địa chỉ mạng và địa chỉ broadcast).`
+
+Câu 144: Bảng thông tin chuyển tiếp của một bộ định tuyến như sau. Bộ định tuyến nhận được ba gói tin IPv4 từ máy 10.10.10.1 gửi lần lượt đến các máy 192.168.1.1, 172.16.2.9, 172.5.16.1. Khi đó các gói tin này sẽ được gửi tới các cổng ra tương ứng của bộ định tuyến:
+| Destination | Output port |
+|---|---|
+| 192.168.1.0/24 | A |
+| 192.168.1.0/30 | B |
+| 172.16.0.0/16 | C |
+| 172.16.2.0/24 | D |
+| 172.16.2.128/25 | E |
+| 0.0.0.0/0 | F |
+A. B, D, F
+B. A, E, F
+C. B, D, E
+D. A, C, F
+• A. a;
+^1. 192.168.1.1 khớp với /30 (longest match) -> B.
+2. 172.16.2.9 khớp với /24 (longest match) -> D.
+3. 172.5.16.1 không khớp với entry nào cụ thể, sẽ đi theo default route 0.0.0.0/0 -> F.`
+
+Câu 152: Chọn một phát biểu chính xác nhất
+A. RIP là giao thức routing phân cấp (hierarchical routing protocol)
+B. OSPF là Inter-domain routing
+C. Routing trên mạng Internet là kết hợp của các giao thức Inter-domain and Intra-domain
+D. Giao thức định tuyến BGP sử dụng thuật toán routing Dijkstra
+• C. a;
+^Việc định tuyến trên Internet là sự kết hợp giữa các giao thức định tuyến nội miền (Intra-domain, ví dụ OSPF, RIP) và liên miền (Inter-domain, ví dụ BGP).`
+
+Câu 158: Câu nào diễn đạt đúng về giao thức IP?
+A. IP là giao thức không hướng nối (connectionless oriented)
+B. IP là giao thức đảm bảo thời gian thực
+C. IP là giao thức tin cậy
+D. IP là giao thức hướng nối (connection oriented)
+• A. a;
+^Giao thức IP (Internet Protocol) cung cấp dịch vụ chuyển phát "best-effort", không hướng nối.`
+
+Câu 173: Ý nào dưới đây không đúng về giao thức OSPF
+A. OSPF sử dụng thuật toán định tuyến link-state
+B. OSPF mã hóa các OSPF message
+C. OSPF không cho phép chọn nhiều path có cost giống nhau
+D. OSPF hỗ trợ định tuyến phân cấp
+• C. a;
+^OSPF cho phép cân bằng tải trên nhiều đường đi có chi phí bằng nhau (Equal-Cost Multi-Path - ECMP).`
+
+Câu 179: Địa chỉ IP loopback là
+A. 127.0.0.1
+B. 192.168.1.1
+C. 10.10.10.10
+D. 255.255.255.255
+• A. a;
+^127.0.0.1 là địa chỉ loopback tiêu chuẩn cho IPv4.`
+
+Câu 182: Một nút mạng có thông số về địa chỉ IP như sau: 194.12.2.179/255.255.255.240. Xác định số hiệu của Subnet mà host này thuộc vào và host number của nút mạng:
+A. Subnet 176, host number 11
+B. Subnet 11110000, host number 179
+C. Subnet 10110000, host number 179
+D. Subnet 11110000, host number 11
+• A. a;
+^Subnet mask 255.255.255.240 (/28). Địa chỉ Subnet = 194.12.2.179 AND 255.255.255.240 = 194.12.2.176. Host number là phần còn lại trong subnet, 179 - 176 = 3 (nhưng câu hỏi có thể diễn giải khác). Trong các đáp án, A có Subnet 176 là đúng.`
+
+CHƯƠNG 5: TẦNG LIÊN KẾT DỮ LIỆU
+Câu 12: Chọn kết luận sát thực tế nhất về “Độ dài lớn nhất của một frame trong chuẩn 802.3 (Ethernet)” là
+A. 1518
+B. 1230
+C. 1021
+D. 2048
+• A. a;
+^Một frame Ethernet tiêu chuẩn có độ dài lớn nhất là 1518 bytes, bao gồm 14B header + 1500B payload + 4B trailer (FCS).`
+
+Câu 18: (đúng sai) Lựa chọn các chức năng của switch
+A. đánh địa chỉ IP
+B. tránh các vòng lặp
+C. forwarding và lọc frame theo MAC
+D. học địa chỉ MAC
+• B. a;
+^Switch có chức năng học địa chỉ MAC, chuyển tiếp và lọc frame dựa trên MAC, và tránh các vòng lặp bằng STP. Nó không đánh địa chỉ IP.`
+
+Câu 21: Hai máy tính A (IP: 10.10.0.1/24) và B (IP: 172.16.0.1/24) có thể trao đổi dữ liệu với nhau bình thường. Khi tầng Application từ A cần gửi thông tin đến tầng Application của B, bên trong khung tin (frame) đi ra từ tầng liên kết dữ liệu (data link) của máy A gửi đến máy B sẽ chứa
+A. MAC của A, MAC của B, IP của A, IP của B
+B. MAC của A, IP của A, IP của B
+C. MAC của B, IP của A, IP của B
+D. MAC của A, MAC của B.
+• B. a;
+^Vì A và B ở hai mạng khác nhau, frame từ A sẽ được gửi đến router. Frame này chứa địa chỉ IP nguồn của A, IP đích của B, MAC nguồn của A, và MAC đích của router.`
+
+Câu 25: Câu nào diễn đạt đúng về switch?
+A. tạo ra nhiều miền collision và nhiều miền broadcast
+B. tạo ra một miền collision và nhiều miền broadcast
+C. tạo ra nhiều miền collision và một miền broadcast
+D. tạo ra một miền collision và một miền broadcast
+• C. a;
+^Mỗi cổng của switch là một miền xung đột (collision domain) riêng biệt. Tuy nhiên, tất cả các cổng của switch theo mặc định thuộc cùng một miền quảng bá (broadcast domain).`
+
+Câu 27: Các chức năng của link layer được thực hiện ở đâu trong host
+A. Network interface card (card mạng) và hệ điều hành
+B. Hệ điều hành
+C. Bộ nhớ
+D. Network interface card (card mạng)
+• D. a;
+^Phần lớn các chức năng của tầng liên kết dữ liệu (và tầng vật lý) được triển khai trong phần cứng của card mạng (NIC).`
+
+Câu 38: Giao thức nào biết được địa chỉ MAC của một nút mạng, sau đó tạo ra cơ sở dữ liệu lưu tạm thời ánh xạ địa chỉ IP - địa chỉ MAC
+A. DNS
+B. IP
+C. ARP
+D. RARP
+• C. a;
+^ARP (Address Resolution Protocol) phân giải địa chỉ IP thành địa chỉ MAC và lưu kết quả vào cache (ARP table). RARP làm ngược lại.`
+
+Câu 48: Card mạng Ethernet làm gì khi xảy ra xung đột
+A. Tiếp tục truyền
+B. Đợi 10 phút rồi truyền lại từ đầu
+C. Đợi 2 phút rồi truyền tiếp
+D. Dừng truyền ngay lập tức
+• D. a;
+^Khi phát hiện xung đột, card mạng Ethernet sẽ ngay lập tức ngừng truyền và thực hiện thuật toán backoff.`
+
+Câu 53: Một mạng LAN hình trạng bus có chiều dài 2km. Tốc độ lan truyền tín hiệu 2 x 10^8 m/s. Tốc độ truyền dữ liệu 10^7 bps. Trong CSMA/CD, để đảm bảo mọi đụng độ đều có thể được phát hiện, kích cỡ nhỏ nhất của khung tin nên là ?
+A. 100 bytes
+B. 25 bytes
+C. 200 bytes
+D. 50 bytes
+• B. a;
+^T_trans >= 2 * T_prop. T_prop = 2000m / (2*10^8 m/s) = 10^-5 s.
+Frame_size / 10^7 bps >= 2 * 10^-5 s => Frame_size >= 200 bits = 25 bytes.`
+
+Câu 54: Hub là thiết bị truyền tin?
+A. Cả ba lựa chọn kia
+B. Quảng bá
+C. Điểm tới điểm
+D. Đa điểm.
+• B. a;
+^Hub là một thiết bị tầng 1, nó lặp lại tín hiệu nhận được ở một cổng ra tất cả các cổng khác, hoạt động như một thiết bị quảng bá.`
+
+Câu 61: Topo mạng nào gồm 1 cáp mạng nối tất cả các nút trên mạng
+A. Bus
+B. Ring
+C. Star
+D. ring-star
+• A. a;
+^Topo mạng Bus sử dụng một đường trục cáp chính để kết nối tất cả các thiết bị trên mạng.`
+
+Câu 67:(đúng sai) Các diễn đạt dưới đây về một địa chỉ Ethernet lớp 2 là “Đúng” hay “Sai”
+A. Được gọi là địa chỉ vật lý
+B. Địa chỉ này sẽ thay đổi khi thiết bị di chuyển từ subnet này sang subnet khác
+C. Địa chỉ được thể hiện bởi 4 khối, mỗi khối là một chuỗi 12 bit nhị phân
+D. Có chiều dài 48 bit
+• A. a;
+^Địa chỉ Ethernet/MAC là địa chỉ 48 bit, được gọi là địa chỉ vật lý và không thay đổi khi di chuyển mạng. Nó có 6 khối, mỗi khối 8 bit.`
+
+Câu 68: (đúng sai) Đánh dấu “Đúng” hoặc “Sai” cho các ý sau khi một máy tính A di chuyển từ subnet này sang subnet khác
+A. Địa chỉ default gateway lưu trên máy A phải giữ nguyên
+B. Máy A vẫn hoạt động với địa chỉ MAC cũ
+C. Các ứng dụng chạy trên máy A cần phải được gắn thêm địa chỉ port
+D. Địa chỉ IP của máy A phải được gán lại
+• B. a;
+^Khi di chuyển sang subnet khác, địa chỉ MAC không đổi, nhưng địa chỉ IP và default gateway phải được gán lại cho phù hợp với mạng mới.`
+
+Câu 70: Cho 2 byte dữ liệu dưới dạng mã hexa A0B1. Tính 3-bit CRC của 2 byte dữ liệu đó biết rằng CRC generator G dưới dạng nhị phân là 1001.
+A. 110
+B. 011
+C. 101
+D. 001
+• A. a;
+^Thực hiện phép chia đa thức (XOR) của dữ liệu (đã thêm 3 bit 0) cho đa thức sinh G. Phần dư của phép chia là 110.`
+
+Câu 76: Thiết bị kết nối mạng nào cho phép nhiều nút đồng thời cùng gửi và nhận trên các segment mạng khác nhau
+A. Repeater
+B. Switch
+C. Hub
+D. Amplifier
+• B. a;
+^Switch tạo ra các kết nối điểm-điểm ảo, cho phép nhiều cặp thiết bị truyền thông đồng thời mà không gây xung đột.`
+
+Câu 82: Phát biểu nào dưới đây về địa chỉ MAC là không đúng
+A. Địa chỉ MAC có chiều dài 48 bit
+B. Địa chỉ MAC được cấp phát thông qua giao thức ARP
+C. Địa chỉ MAC được sử dụng để gửi frame ở trong mạng nội bộ
+D. Địa chỉ MAC được biểu diễn sử dụng hệ “hexa”
+• B. a;
+^Địa chỉ MAC được nhà sản xuất gán cố định. ARP chỉ dùng để tìm ra địa chỉ MAC, không phải để cấp phát.`
+
+Câu 86:(Đúng sai) Các diễn đạt dưới đây về phương pháp xác định lỗi bít “single bit parity” ở tầng liên kết là “Đúng” hay “Sai”
+A. Bit 1 được thêm vào cuối cùng sao cho tổng số bit 1 thu được là số lẻ
+B. Bit 0 được thêm vào đầu sao cho tổng số bit 0 tạo thành là số lẻ
+C. Bit 1 được thêm vào cuối cùng sao cho tổng số bit 1 thu được là số chẵn
+D. Bit 0 được thêm vào đầu sao cho tổng số bit 0 tạo thành là số chẵn
+• A. a;
+^Trong phương pháp parity bit lẻ (odd parity), bit parity được thêm vào để tổng số bit 1 là một số lẻ. Tương tự với parity chẵn (even parity). Cả A và C đều là các phương pháp hợp lệ.`
+
+Câu 87: Các phát biểu sau về CSMA, phát biểu nào sai
+A. Node sẽ không truyền frame nếu kênh truyền đang bận
+B. Node dừng truyền frame ngay khi xung đột truy nhập kênh (collision) xảy ra
+C. Node muốn gửi dữ liệu sẽ cảm nhận sóng mang trên kênh trước khi truyền
+D. Xung đột có thể xảy ra do trễ lan truyền tín hiệu trên kênh
+• B. a;
+^CSMA (Carrier Sense Multiple Access) chỉ có cơ chế lắng nghe kênh trước khi truyền. Nó không có cơ chế phát hiện xung đột (Collision Detection - CD). Do đó, khi xung đột xảy ra, nó vẫn tiếp tục truyền hết gói tin.`
+
+Câu 88: Giao thức dùng để tìm địa chỉ MAC nếu biết IP
+A. ARP
+B. SSH
+C. DHCP
+D. Telnet
+• A. a;
+^ARP (Address Resolution Protocol) được sử dụng để ánh xạ địa chỉ IP sang địa chỉ MAC.`
+
+Câu 89: Frame là dữ liệu được trao đổi ở tầng
+A. Transport
+B. Datalink
+C. Network
+D. Physical
+• B. a;
+^Frame (khung tin) là đơn vị dữ liệu của tầng liên kết dữ liệu (Datalink Layer).`
+
+Câu 90: Cho dữ liệu D= 100000, đa thức sinh G= 101. Mã CRC sẽ là :
+A. 11
+B. 10
+C. 00
+D. 01
+• B. a;
+^Thực hiện phép chia đa thức (XOR) của 10000000 (D đã thêm 2 bit 0) cho 101. Phần dư là 10.`
+
+Câu 92: Tốc độ của Gigabit Ethernet là bao nhiêu
+A. 1000 Mb/s
+B. 10 Mb/s
+C. 1 Mb/s
+D. 100 Mb/s
+• A. a;
+^Gigabit Ethernet có tốc độ danh định là 1 Gigabit mỗi giây (Gbps), tương đương 1000 Megabit mỗi giây (Mbps).`
+
+Câu 100: Switch là thiết bị ở tầng
+A. Giao vận
+B. Ứng dụng
+C. Mạng
+D. Liên kết dữ liệu
+• D. a;
+^Switch (Layer 2) là thiết bị hoạt động ở tầng liên kết dữ liệu, chuyển tiếp frame dựa trên địa chỉ MAC.`
+
+Câu 106: Trong mạng cục bộ Ethernet, điều nào sau đây là đúng?
+A. Bên gửi vẫn tiếp tục gửi khung tin sau khi nghe được đụng độ
+B. Tín hiệu đụng độ được dùng để bổ trợ cho các khung tin với kích cỡ nhỏ
+C. Bên gửi dừng nghe đường truyền khi bắt đầu gửi khung tin
+D. Thời gian chờ thay đổi theo thuật toán exponential backoff làm giảm xác suất đụng độ khi truyền lại
+• D. a;
+^Khi xung đột xảy ra, các nút sử dụng thuật toán exponential backoff để tính toán một khoảng thời gian chờ ngẫu nhiên trước khi thử truyền lại, giúp giảm xác suất tái xung đột.`
+
+Câu 108: Những trường nào có trong header của frame Ethernet?
+A. authentication code
+B. source and destination hardware addresses
+C. error correction code
+D. source and destination network addresses
+• B. a;
+^Header của frame Ethernet II chứa địa chỉ MAC nguồn và đích, là các địa chỉ phần cứng (hardware addresses).`
+
+Câu 109: Ba hình trang mạng được dùng phổ biến để nối kết các máy tính là: đường thẳng (bus), hình sao (Star with Switch), mạng vòng (ring). Theo anh/chị, trong trường hợp nào sau đây khi một máy tính truyền tin thì các máy khác đều có thể nhận được?
+A. Star with Switch và Ring
+B. Star with Switch và Star
+C. Ring và Bus
+D. Star with Switch
+• C. a;
+^Trong topo Bus, tín hiệu được truyền trên toàn bộ đường trục. Trong topo Ring, tín hiệu được truyền lần lượt qua từng nút cho đến khi về lại nút gửi. Cả hai trường hợp đều cho phép các máy khác nhận được tin.`
+
+Câu 114: Ưu điểm của thiết bị hub so với thiết bị switch (layer 2) là gì?
+A. Đơn giản, dễ chế tạo
+B. Có khả năng định tuyến ở tầng IP
+C. Có khả năng kết nối các cổng LAN có tốc độ truyền khác nhau
+D. Phân chia mạng LAN thành các miền xung đột khác nhau
+• A. a;
+^Hub có cấu tạo và nguyên lý hoạt động rất đơn giản (chỉ lặp lại tín hiệu) nên nó rẻ và dễ chế tạo hơn switch.`
+
+Câu 122: Trong một mạng LAN có cài đặt một switch nối với một router. Router được tích hợp chức năng DHCP và DNS. Một máy tính C được cấu hình sử dụng DHCP. Khi C truy vấn tên miền www.vnexpress.net đã được cache tại DNS nội bộ. Câu nào chính xác nhất?
+A. Sau khi C cắm vào switch, ARP được kích hoạt, sau đó DHCP, sau đó DNS.
+B. Sau khi C cắm vào switch, DHCP được kích hoạt, sau đó DNS được kích hoạt ở tầng ứng dụng khiến cho ARP được kích hoạt ở tầng datalink.
+C. Sau khi C cắm vào switch, DHCP được kích hoạt, sau đó ARP, sau đó DNS.
+D. Sau khi C cắm vào switch, DNS được kích hoạt, sau đó DHCP, sau đó ARP.
+• B. a;
+^Thứ tự đúng là: 1. DHCP để lấy địa chỉ IP. 2. Client muốn gửi truy vấn DNS đến router, nhưng chưa biết MAC của router, nên phải dùng ARP để tìm MAC. 3. Gửi truy vấn DNS.`
+
+Câu 123: Giao thức nào gửi yêu cầu quảng bá (broadcast) và nhận phản hồi đơn điểm (unicast):
+A. ARP
+B. CSMA/CD
+C. TCP
+D. ICMP
+• A. a;
+^ARP gửi một ARP Request dưới dạng broadcast để hỏi địa chỉ MAC. Host có IP tương ứng sẽ trả lời bằng một ARP Reply dưới dạng unicast.`
+
+Câu 134: Phát biểu nào dưới đây không đúng về thiết bị switch
+A. Switch sử dụng forwarding table để forward frame
+B. Switch hoạt động ở tầng vật lý
+C. Switch hoạt động theo cơ chế store và forward
+D. Switch xây dựng forwarding table theo cơ chế tự học
+• B. a;
+^Switch hoạt động ở tầng liên kết dữ liệu (Tầng 2).`
+
+Câu 139: Máy tính A gửi 1 gói tin IP cho máy tính B không nằm cùng một subnet. Hỏi khung tin (frame) của layer 2 chứa gói tin IP khi gửi đi sẽ có địa chỉ MAC đích là địa chỉ nào?
+A. Địa chỉ MAC của máy tính A
+B. Địa chỉ MAC của máy tính B
+C. Địa chỉ MAC FF-FF-FF-FF
+D. Địa chỉ MAC của router
+• D. a;
+^Khi đích ở mạng khác, frame sẽ được gửi đến default gateway (router), do đó MAC đích là của router.`
+
+Câu 142: Phát biểu nào sau đây không chính xác về giao thức ARP
+A. ARP hoạt động dựa trên ARP table
+B. ARP không sử dụng phương thức truyền broadcast trong LAN
+C. ARP là giao thức hoạt động theo kiểu Request/reply
+D. ARP phân giải địa chỉ IP ra địa chỉ MAC
+• B. a;
+^ARP Request là một thông điệp broadcast.`
+
+Câu 145: Máy tính A muốn gửi 1 gói tin IP cho máy tính B có địa chỉ IP cho trước nhưng không biết địa chỉ MAC của máy tính B. Máy tính A sẽ
+A. Gửi gói tin IP đi với địa chỉ MAC đích là FF:FF:FF:FF
+B. Gửi gói tin IP đi với địa chỉ MAC đích là 00:00:00:00
+C. Gửi truy vấn DNS để biết địa chỉ MAC của máy tính B
+D. Sử dụng giao thức ARP để truy vấn địa chỉ MAC của máy tính B
+• D. a;
+^Nếu B ở cùng subnet, A sẽ dùng ARP để tìm MAC của B. Nếu B ở khác subnet, A sẽ dùng ARP để tìm MAC của router.`
+
+Câu 153: CSMA/CD thuộc kiểu giao thức truy cập môi trường nào
+A. Random Access
+B. Taking turn
+C. Channel Partitioning
+D. Cả 3 loại trên
+• A. a;
+^CSMA/CD là một giao thức truy cập ngẫu nhiên, nơi các nút có thể truyền bất cứ lúc nào sau khi lắng nghe kênh rỗi.`
+
+Câu 155: Máy tính A gửi cho máy tính B dữ liệu là chuỗi bit 11010. Tìm mã kiểm tra lỗi CRC biết biết máy tính A sử dụng đa thức sinh (generator) là 101
+A. 01
+B. 10
+C. 11
+D. 00
+• A. a;
+^Thực hiện phép chia đa thức (XOR) của 1101000 (D đã thêm 2 bit 0) cho 101. Phần dư là 01.`
+
+Câu 163: Trong giao thức CSMA/CD, nếu 2 máy tính cùng đồng thời truyền 2 khung tin vào môi trường truyền thì 2 máy tính này sẽ
+A. Phát hiện được xung đột và ngừng truyền dữ liệu ngay lập tức
+B. Chỉ phát hiện được xung đột sau khi nhận được gói tin biên nhận ACK
+C. Tăng mức năng lượng của tín hiệu truyền để giảm nguy cơ bị lỗi do xung đột xảy ra
+D. Gửi cảnh báo xung đột cho nhau và tiếp tục truyền
+• A. a;
+^Khi phát hiện xung đột, các nút sẽ ngay lập tức ngừng truyền, gửi tín hiệu jam, và thực hiện thuật toán backoff.`
+
+Câu 168: Phương pháp đa truy cập nào dưới đây không thuộc nhóm giao thức “truy cập ngẫu nhiên (random access)
+A. FDMA
+B. CSMA/CD
+C. ALOHA
+D. CSMA
+• A. a;
+^FDMA (Frequency-Division Multiple Access) thuộc nhóm phân chia kênh (Channel Partitioning).`
+
+Câu 175: Tầng datalink sử dụng …. để chuyển gói tin đến đích
+A. Địa chỉ IP
+B. Cổng
+C. Tên máy tính
+D. Địa chỉ MAC
+• D. a;
+^Trong một mạng LAN, tầng datalink sử dụng địa chỉ MAC để chuyển tiếp frame.`
+
+Câu 180: Địa chỉ MAC có chiều dài
+A. 48 bit
+B. 32 bit
+C. 16 bit
+D. 64 bit
+• A. a;
+^Địa chỉ MAC là một địa chỉ 48-bit.`
