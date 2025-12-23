@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: 'https://github.com/viet2005-68/TRAC_NGHIEM_KTCT_MMT.git',
+  base: '/TRAC_NGHIEM_KTCT_MMT/',
   optimizeDeps: {
     include: ['mammoth', 'pdfjs-dist'],
     exclude: ['pdfjs-dist/build/pdf.worker.min.mjs']
