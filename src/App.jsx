@@ -183,8 +183,8 @@ function App() {
         return;
       }
 
-      // Question start (format: "Câu X: question text")
-      const questionMatch = trimmedLine.match(/^Câu\s+\d+:\s*(.+)$/i);
+      // Question start (format: "Câu X: question text" or "Câu X. question text")
+      const questionMatch = trimmedLine.match(/^Câu\s+\d+[:.]\s*(.+)$/i);
       if (questionMatch) {
         // Save previous question if exists (without explanation)
         if (
